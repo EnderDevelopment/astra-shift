@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "endermod",
+  "version": "${version}",
+  "name": "EnderMod",
+  "description": "A Fabric mod for Minecraft 1.21.11 with a neon orange color scheme, dynamic keybinds, and over 50 legal modules including HUD elements, QoL features, and visual effects.",
+  "authors": ["EnderDevelopment"],
+  "contact": {
+    "homepage": "https://enderdevelopment.com",
+    "sources": "https://github.com/EnderDevelopment/EnderMod"
+  },
+  "license": "MIT",
+  "icon": "assets/endermod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.enderdevelopment.EnderMod"
+    ],
+    "client": [
+      "com.enderdevelopment.client.EnderModClient"
+    ]
+  },
+  "mixins": [
+    "endermod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*"
+  }
+}
